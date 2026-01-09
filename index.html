@@ -3,144 +3,257 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-<meta name="theme-color" content="#050509">
+<meta name="theme-color" content="#0a1628">
 <title>Pallavi Nanda - AI Marketing Strategist | SEO, AEO & GEO Expert</title>
-<meta name="description" content="Former Python Backend & AI Engineer now specializing in AI-powered marketing systems, SEO/AEO/GEO optimization, and high-converting content strategy. 12,000+ content pieces delivered.">
+<meta name="description" content="Former Python Backend & AI Engineer now specializing in AI-powered marketing systems, SEO/AEO/GEO optimization, and high-converting content strategy.">
 <meta name="keywords" content="AI marketing strategist, SEO expert, AEO specialist, GEO optimization, AI engineer turned marketer">
 <meta name="author" content="Pallavi Nanda">
 <meta property="og:image" content="https://i.ibb.co/8FmdKnx/IMG-0476.avif">
 <meta property="twitter:image" content="https://i.ibb.co/8FmdKnx/IMG-0476.avif">
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
-:root { --primary-dark: #0a0a0f; --text-primary: #f0f0f5; --text-secondary: #a8a8b8; --background: #0d0620; --card-bg: #16162a; --gradient-1: #6366f1; --gradient-2: #8b5cf6; }body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--background); color: var(--text-primary); line-height: 1.7; overflow-x: hidden; }
+:root {
+--background-solid: #0a1628;
+--text-primary: #ffffff;
+--text-secondary: #b4c5d6;
+--card-bg: #112240;
+--accent-cyan: #00d9ff;
+--accent-purple: #b000ff;
+--accent-warm: #ffb800;
+}
+body {
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+background: var(--background-solid);
+color: var(--text-primary);
+line-height: 1.8;
+overflow-x: hidden;
+font-weight: 400;
+}
 html { scroll-behavior: smooth; }
-nav { padding: 2rem; position: fixed; width: 100%; top: 0; z-index: 1000; background: linear-gradient(to bottom, rgba(5, 5, 9, 0.95), transparent); display: flex; justify-content: space-between; align-items: center; }
-.logo { font-size: 1.5rem; font-weight: 600; background: linear-gradient(135deg, var(--gradient-1), var(--gradient-2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-.nav-links { display: flex; list-style: none; gap: 2rem; }
-.nav-links a { color: var(--text-secondary); text-decoration: none; transition: color 0.3s; font-size: 0.95rem; }
-.nav-links a:hover { color: var(--text-primary); }
-.container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
-section { margin-top: 8rem; padding: 4rem 0; }
-.hero { min-height: 90vh; display: flex; align-items: center; padding: 6rem 2rem; }
-.hero-content { max-width: 800px; }
-.hero-image { width: 200px; height: 200px; 16px; object-fit: cover; object-position: center top; box-shadow: 0 0 40px rgba(99, 102, 241, 0.3); border:.hero h1 { font-size: 3.5rem; line-height: 1.2; margin-bottom: 2rem; font-weight: 300; }
-.hero h1 strong { font-weight: 500; background: linear-gradient(135deg, var(--gradient-1), var(--gradient-2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-.philosophy { font-size: 1.25rem; color: var(--text-secondary); margin-bottom: 3rem; line-height: 1.6; }
-h2 { font-size: 2.5rem; font-weight: 300; margin-bottom: 3rem; }
-h3 { font-size: 1.5rem; font-weight: 400; margin-bottom: 1rem; }
-p { color: var(--text-secondary); margin-bottom: 1.5rem; }
-.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem; }
-.service-card { background: var(--card-bg); padding: 2.5rem; border-radius: 12px; border: 1px solid rgba(179, 179, 230, 0.1); transition: all 0.4s; }
-.service-card:hover { border-color: rgba(179, 179, 230, 0.3); transform: translateY(-8px); }
-.domains-list { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2rem; }
-.domain-tag { background: #1a1a2e; padding: 0.75rem 1.5rem; border-radius: 30px; font-size: 0.9rem; color: var(--text-secondary); border: 1px solid rgba(179, 179, 230, 0.15); }
-.domain-tag:hover { border-color: rgba(179, 179, 230, 0.4); }
-.proof-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem; margin-top: 3rem; }
-.stat-number { font-size: 3rem; font-weight: 300; background: linear-gradient(135deg, var(--gradient-1), var(--gradient-2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-.thinking-spaces { display: flex; gap: 1.5rem; margin-top: 2rem; flex-wrap: wrap; }
-.space-link { color: var(--text-secondary); text-decoration: none; padding: 1rem 1.5rem; background: var(--card-bg); border-radius: 10px; border: 1px solid rgba(179, 179, 230, 0.1); transition: all 0.3s; }
-.space-link:hover { color: var(--text-primary); border-color: rgba(179, 179, 230, 0.3); }
-.contact-email { display: inline-block; font-size: 1.5rem; color: var(--text-primary); text-decoration: none; margin-top: 2rem; border-bottom: 2px solid var(--gradient-1); }
-footer { padding: 3rem 0; text-align: center; color: var(--text-secondary); margin-top: 4rem; }
-@media (max-width: 768px) { .hero { padding: 5rem 1.5rem; } .hero h1 { font-size: 2rem; } }
+nav {
+padding: 2rem;
+position: fixed;
+width: 100%;
+top: 0;
+z-index: 1000;
+background: linear-gradient(to bottom, rgba(10, 22, 40, 0.98), transparent);
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.logo {
+font-size: 1.6rem;
+font-weight: 700;
+background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+}
+.nav-links {
+display: flex;
+list-style: none;
+gap: 2.5rem;
+}
+.nav-links a {
+color: var(--text-secondary);
+text-decoration: none;
+transition: color 0.3s;
+font-size: 0.95rem;
+font-weight: 500;
+}
+.nav-links a:hover {
+color: var(--accent-cyan);
+text-shadow: 0 0 10px rgba(0, 217, 255, 0.3);
+}
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 2rem;
+}
+section {
+margin-top: 8rem;
+padding: 4rem 0;
+}
+.hero {
+min-height: 90vh;
+display: flex;
+align-items: center;
+padding: 6rem 2rem;
+gap: 4rem;
+}
+.hero-content {
+max-width: 800px;
+flex: 1;
+}
+.hero-image {
+width: 240px;
+height: 240px;
+border-radius: 16px;
+object-fit: cover;
+object-position: center top;
+box-shadow: 0 0 60px rgba(0, 217, 255, 0.2), inset 0 0 20px rgba(176, 0, 255, 0.1);
+border: 2px solid rgba(0, 217, 255, 0.3);
+flex-shrink: 0;
+transition: transform 0.3s, box-shadow 0.3s;
+}
+.hero-image:hover {
+transform: scale(1.02);
+box-shadow: 0 0 80px rgba(0, 217, 255, 0.4), inset 0 0 30px rgba(176, 0, 255, 0.15);
+}
+.hero h1 {
+font-size: 4rem;
+line-height: 1.1;
+margin-bottom: 2rem;
+font-weight: 700;
+letter-spacing: -1px;
+}
+.hero h1 strong {
+font-weight: 700;
+background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+}
+.philosophy {
+font-size: 1.3rem;
+color: var(--text-secondary);
+margin-bottom: 3rem;
+line-height: 1.7;
+font-weight: 300;
+}
+h2 {
+font-size: 2.8rem;
+font-weight: 700;
+margin-bottom: 3rem;
+}
+h3 {
+font-size: 1.6rem;
+font-weight: 600;
+margin-bottom: 1rem;
+color: var(--accent-cyan);
+}
+p {
+color: var(--text-secondary);
+margin-bottom: 1.5rem;
+font-weight: 300;
+}
+.services-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 2rem;
+margin-top: 3rem;
+}
+.service-card {
+background: var(--card-bg);
+padding: 2.5rem;
+border-radius: 16px;
+border: 1px solid rgba(0, 217, 255, 0.15);
+transition: all 0.4s;
+position: relative;
+overflow: hidden;
+}
+.service-card:hover {
+border-color: var(--accent-cyan);
+transform: translateY(-8px);
+box-shadow: 0 20px 40px rgba(0, 217, 255, 0.1);
+}
+.domains-list {
+display: flex;
+flex-wrap: wrap;
+gap: 1rem;
+margin-top: 2rem;
+}
+.domain-tag {
+background: rgba(0, 217, 255, 0.1);
+padding: 0.75rem 1.5rem;
+border-radius: 30px;
+font-size: 0.9rem;
+color: var(--accent-cyan);
+border: 1px solid rgba(0, 217, 255, 0.3);
+font-weight: 500;
+transition: all 0.3s;
+}
+.domain-tag:hover {
+background: rgba(0, 217, 255, 0.2);
+box-shadow: 0 0 20px rgba(0, 217, 255, 0.2);
+}
+footer {
+text-align: center;
+padding: 3rem 2rem;
+margin-top: 6rem;
+border-top: 1px solid rgba(0, 217, 255, 0.1);
+font-size: 0.95rem;
+color: var(--text-secondary);
+font-weight: 300;
+}
+a {
+color: var(--accent-cyan);
+text-decoration: none;
+transition: all 0.3s;
+}
+a:hover {
+text-decoration: underline;
+text-shadow: 0 0 10px rgba(0, 217, 255, 0.3);
+}
+@media (max-width: 768px) {
+.hero { flex-direction: column; }
+.hero h1 { font-size: 2.5rem; }
+}
 </style>
 </head>
 <body>
 <nav>
-<div class="logo">Pallavi Nanda</div>
+<div class="logo">P.Nanda</div>
 <ul class="nav-links">
-<li><a href="#about">Evolution</a></li>
-<li><a href="#work">What I Build</a></li>
-<li><a href="#proof">Proof of Work</a></li>
+<li><a href="#work">Work</a></li>
+<li><a href="#approach">Approach</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
 </nav>
-<main>
-<section class="hero" id="home">
-<div class="hero-content">
-<img src="https://i.ibb.co/8FmdKnx/IMG-0476.avif" alt="Pallavi Nanda" class="hero-image">
-<h1>Building <strong>intelligent marketing systems</strong> where AI research meets human storytelling and strategic visibility</h1>
-<p class="philosophy">Former Python Backend Engineer and AI Engineer, now building AI-powered marketing engines that drive measurable visibility, trust, and conversion through SEO, AEO, and GEO optimization.</p>
-</div>
-</section>
-<section id="about">
 <div class="container">
-<h2>EVOLUTION</h2>
-<h3>From Python Engineer to AI-Powered Marketing Strategist</h3>
-<p>I started as a Python Backend Engineer building scalable systems. Then moved into AI Engineering, spending five years deep in ML, NLP, and intelligent systems solving real-world problems.</p>
-<p>This isn't a career switch—it's an evolution. I bring analytical rigor from backend engineering into marketing infrastructure that scales. I understand how algorithms work, search engines think, and AI agents discover content because I've built systems like them.</p>
-<p>I design SEO strategies that rank, AEO strategies featured in AI answer engines like ChatGPT and Claude, and GEO frameworks ensuring visibility in AI-generated search results.</p>
+<section class="hero">
+<img src="https://i.ibb.co/8FmdKnx/IMG-0476.avif" alt="Pallavi Nanda" class="hero-image">
+<div class="hero-content">
+<h1>Building <strong>intelligent marketing systems</strong> where AI research meets human storytelling and strategic visibility</h1>
+<p class="philosophy">Former Python Backend Engineer and AI Engineer, now building AI-powered marketing engines that drive measurable visibility, trust, and conversion through SEO/AEO/GEO optimization.</p>
+<div class="domains-list">
+<span class="domain-tag">AI Marketing</span>
+<span class="domain-tag">SEO/AEO/GEO</span>
+<span class="domain-tag">Backend Engineer</span>
+<span class="domain-tag">Content Strategy</span>
+</div>
 </div>
 </section>
 <section id="work">
-<div class="container">
-<h2>WHAT I BUILD</h2>
-<h3>AI-Powered Marketing Systems That Drive Results</h3>
+<h2>What I Build</h2>
 <div class="services-grid">
 <div class="service-card">
-<h3>AI-Based Marketing Systems</h3>
-<p>Integrated frameworks leveraging ML for content generation, audience analysis, and campaign optimization.</p>
+<h3>AI-Powered Marketing Systems</h3>
+<p>Enterprise-level marketing automation using LLMs, RAG, and intelligent routing. Systems that understand context, optimize in real-time, and scale with intelligence.</p>
 </div>
 <div class="service-card">
-<h3>SEO, AEO & GEO Strategy</h3>
-<p>Future-ready optimization across Google, Bing, ChatGPT, Claude, Perplexity, and generative search interfaces.</p>
+<h3>SEO/AEO/GEO Strategy</h3>
+<p>Beyond keywords. Building comprehensive visibility strategies that rank content, optimize for AI discovery, and geo-target intelligently for maximum impact.</p>
 </div>
 <div class="service-card">
-<h3>High-Converting Website Copy</h3>
-<p>Conversion-focused writing optimized for humans and search algorithms. Storytelling plus SEO.</p>
-</div>
-<div class="service-card">
-<h3>Technical to Human Stories</h3>
-<p>Translating complex AI and SaaS products into clear narratives resonating with decision-makers.</p>
-</div>
-</div>
-<h3 style="margin-top: 4rem;">Industries & Domains</h3>
-<div class="domains-list">
-<span class="domain-tag">AI Technology</span>
-<span class="domain-tag">SaaS B2B Tech</span>
-<span class="domain-tag">Travel & Hospitality</span>
-<span class="domain-tag">Wine & Food</span>
-<span class="domain-tag">Culture & Lifestyle</span>
+<h3>Content Intelligence</h3>
+<p>12,000+ high-converting pieces delivered. Data-driven content creation that bridges engineering precision with marketing psychology.</p>
 </div>
 </div>
 </section>
-<section id="proof">
-<div class="container">
-<h2>PROOF OF WORK</h2>
-<h3>Track Record: Engineering to Marketing Excellence</h3>
-<div class="proof-stats">
-<div class="stat">
-<div class="stat-number">12,000+</div>
-<div class="stat-label">Content pieces delivered across B2B tech, AI startups, travel, and digital products</div>
-</div>
-<div class="stat">
-<div class="stat-number">5+ Years</div>
-<div class="stat-label">Python Backend Engineering and AI/ML systems before marketing transition</div>
-</div>
-<div class="stat">
-<div class="stat-number">SEO, AEO, GEO</div>
-<div class="stat-label">Triple-optimized strategy for search, answer engines, and generative AI</div>
-</div>
-</div>
-<h3 style="margin-top: 5rem;">Published Work</h3>
-<div class="thinking-spaces">
-<a href="https://medium.com/@syntax9090" class="space-link" target="_blank">Medium</a>
-<a href="https://github.com/Syntax9090" class="space-link" target="_blank">GitHub</a>
-<a href="https://www.linkedin.com/in/pallavindev" class="space-link" target="_blank">LinkedIn</a>
-<a href="https://www.instagram.com/thequirkyleaf" class="space-link" target="_blank">Instagram</a>
-</div>
-</div>
+<section id="approach">
+<h2>Philosophy</h2>
+<p style="font-size: 1.2rem; color: var(--accent-cyan);">Building with systems thinking. Designed for clarity.</p>
+<p>Every marketing system I build is engineered for scalability, intelligence, and measurable outcomes. No fluff. No guesswork. Pure strategy backed by data and AI innovation.</p>
 </section>
 <section id="contact">
-<div class="container">
-<h2>LET'S BUILD</h2>
-<p>Looking for an AI-powered marketing strategist who understands systems, SEO/AEO/GEO, and bridges engineering and marketing? Let's connect.</p>
-<a href="mailto:pallavin618@gmail.com" class="contact-email">pallavin618@gmail.com</a>
-</div>
+<h2>Let's Connect</h2>
+<p>Looking for an AI-powered marketing strategist who understands systems?</p>
+<p><a href="mailto:pallavin618@gmail.com">pallavin618@gmail.com</a></p>
 </section>
-</main>
+</div>
 <footer>
-<p>Built with systems thinking. Designed for clarity.</p>
+Built with systems thinking. Designed for clarity.
 </footer>
 </body>
 </html>
